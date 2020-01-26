@@ -16,8 +16,8 @@ import {
 import ResponsiveContainer from '../ResponsiveContainer';
 import HomePageHeading from './HomePageHeading';
 
-const HomepageLayout = props => (
-  <ResponsiveContainer PageHeading={HomePageHeading} routerInfo={props.match}>
+const HomepageLayout = ({ match }) => (
+  <ResponsiveContainer PageHeading={HomePageHeading} routerInfo={match}>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
@@ -34,8 +34,9 @@ const HomepageLayout = props => (
               We Make Bananas That Can Dance
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered.
+              {
+                "Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered."
+              }
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>

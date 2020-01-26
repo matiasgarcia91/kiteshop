@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+
 const items = [
   { name: 'homepage', displayName: 'Home', path: '/' },
   { name: 'kiteshop', displayName: 'Kites', path: '/kites' },
@@ -14,13 +15,7 @@ const MobileMenu = () => {
       {item.displayName}
     </Menu.Item>
   ));
-  return (
-    <Fragment>
-      {MenuItems}
-      <Menu.Item as="a">Log in</Menu.Item>
-      <Menu.Item as="a">Sign Up</Menu.Item>
-    </Fragment>
-  );
+  return <>{MenuItems}</>;
 };
 
 export default MobileMenu;

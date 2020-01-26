@@ -10,8 +10,11 @@ module.exports = {
     airbnb({
       eslint: {
         rules: {
-          'object-curly-newline': { multiline: true },
+          'object-curly-newline': 0,
           'react/prop-types': 0,
+          'arrow-parens': 0,
+          'react/no-array-index-key': 0,
+          'react/jsx-filename-extension': 0,
         },
       },
     }),
